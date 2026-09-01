@@ -10,7 +10,7 @@ from prompt import get_prompt
 class RAG_Pipeline:
 
     def __init__(self):
-        documents = loader_documents("documents/USA_Employee_Handbook-Freely_Available.pdf")
+        documents = loader_documents("documents/HR_Policy.pdf")
         chunks = split_documents(documents)
         embeddings = get_embeddings()
         vectorstore = create_vector_store(
