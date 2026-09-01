@@ -36,3 +36,6 @@ class RAG_Pipeline:
         })
         response = self.llm.invoke(messages)
         return response.content
+
+
+
